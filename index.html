@@ -175,12 +175,84 @@
       color: #60a5fa;
     }
 
+    .card h3 a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .coding-link {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       background: #020617;
       color: #94a3b8;
     }
+
+
+/* Coding Profile Progress Bars */
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #1e293b;
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background: #38bdf8;
+  border-radius: 10px;
+  transition: width 1.5s ease-in-out;
+}
+
+/* Different platform widths */
+.leetcode-progress {
+  width: 75%;
+}
+
+.gfg-progress {
+  width: 65%;
+}
+
+.hackerrank-progress {
+  width: 85%;
+}
+.hackerrank-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.hackerrank-link {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.gfg-link {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.coding-platform-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.gfg-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.hackerrank-icon-img {
+  width: 45px;
+  height: 45px;
+}
   </style>
 </head>
 <body>
@@ -245,6 +317,76 @@
     </div>
   </div>
 </section>
+
+<section id="coding">
+  <h2>Coding Profiles</h2>
+
+  <div class="projects">
+
+    <!-- LeetCode -->
+    <div class="card">
+      <div class="icon">
+        <i class="devicon-leetcode-plain colored"></i>
+      </div>
+      <div>
+        <h3> <a href="https://leetcode.com/u/Albert_Livingstan/" target="_blank" rel="noopener noreferrer" class="coding-link">LeetCode</a></h3>
+        <p>Problems Solved: 150+</p>
+        <div class="progress-bar">
+          <div class="progress leetcode-progress"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- GeeksforGeeks -->
+<div class="card">
+  <div class="icon">
+    <img src="https://cdn.simpleicons.org/geeksforgeeks/2F8D46"
+        alt="GeeksforGeeks"
+        style="width:45px; height:45px;">
+  </div>
+  <div>
+    <h3>
+        <a href="https://www.geeksforgeeks.org/profile/albertliv4u7m/"
+        target="_blank"
+        style="color:#38bdf8; text-decoration:none;">
+        GeeksforGeeks
+      </a>
+    </h3>
+    <p>Problems Solved: 120+</p>
+    <div class="progress-bar">
+      <div class="progress gfg-progress"></div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- HackerRank -->
+<div class="card">
+  <div class="icon">
+    <img src="https://cdn.simpleicons.org/hackerrank/00EA64"
+        alt="HackerRank"
+        style="width:45px; height:45px;">
+  </div>
+  <div>
+    <h3>
+      <a href="https://www.hackerrank.com/profile/albertlivingstan"
+        target="_blank"
+        style="color:#38bdf8; text-decoration:none;">
+        HackerRank
+      </a>
+    </h3>
+    <p>1★ in Python | 3★ in C Problem Solving</p>
+    <div class="progress-bar">
+      <div class="progress hackerrank-progress"></div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
 
 <section id="certificates">
   <h2>Certificates</h2>
